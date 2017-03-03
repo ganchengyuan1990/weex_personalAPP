@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.idea/vcs.xml
+android/.DS_Store
+node_modules
+
+.idea/
+

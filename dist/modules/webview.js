@@ -2222,12 +2222,8 @@
 	            var webElement = this.$el('webview');
 	            $webview.reload(webElement.ref);
 	        },
-	        startload: function startload(e) {
-	            modal.toast({ message: 'pagestart' });
-	        },
-	        finishload: function finishload(e) {
-	            modal.toast({ message: 'finishload' });
-	        },
+	        startload: function startload(e) {},
+	        finishload: function finishload(e) {},
 	        failload: function failload(event) {
 	            modal.toast({ message: 'error' });
 	        }

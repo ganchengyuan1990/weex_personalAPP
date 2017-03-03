@@ -64,10 +64,10 @@
                 $webview.reload(webElement.ref); 
             },
             startload: function(e) {
-              modal.toast({ message: 'pagestart' })
+             // modal.toast({ message: 'pagestart' })
             },
             finishload: function(e) {
-              modal.toast({ message: 'finishload' })
+              //modal.toast({ message: 'finishload' })
             },
             failload: function(event) {
               modal.toast({ message: 'error' })
