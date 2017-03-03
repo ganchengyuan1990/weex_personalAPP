@@ -1,0 +1,39 @@
+<template>
+  <div class="wrapper">
+    <div ref="test" onclick="move" class="box"></div>
+  </div>
+</template>
+<script>
+  require('weex-components');
+  const animation = require('@weex-module/animation')
+  const modal = require('@weex-module/modal')
+  export default {
+    methods: {
+      move () {
+        var testEl = this.$refs.test;
+        animation.transition(testEl, {
+          styles: {
+            color: '#FF0000',
+            transform: 'translate(250, 100)',
+            transformOrigin: 'center center'
+          },
+          duration: 800, //ms
+          timingFunction: 'ease',
+          delay: 0 //ms
+        }, function () {
+          modal.toast({ message: 'animation finished.' })
+        })
+      }
+    }
+  }
+</script>
+<style scoped>
+  .wrapper {
+    height: 100%;
+  }
+  .box {
+    width: 250px;
+    height: 250px;
+    background-color: #DDD;
+  }
+</style>
