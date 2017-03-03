@@ -1,9 +1,11 @@
 操作顺序如下：
 
-> npm install 安装包
+```
+npm install 安装包
 npm run serve: 起一个server
 npm run dev: 时时编译
 上线时 npm run build: 打包
+```
 
 另外，weex playground是个不错的工具，建议使用，扫一扫非常便捷。<https://weex-project.io/cn/playground.html>
 
@@ -18,15 +20,11 @@ npm run dev: 时时编译
 前两天看了weex的会议，觉得阿里又在放大招了，这个工具虽然目前学习社区不多，资源组件不丰富，但是本身调式来发非常便捷，weex playground非常不错，并且因为weex是基于vue的，所以入门简单，`npm run build`打包以后部署到自己的服务器上，用二维码扫描以后就可以拥有一个自己的APP了，并且是兼容三端的，这一点非常诱人。
 
 于是，我就从github上找到了一个别人的项目，<https://github.com/dodola/WeexOne>，然后改造一个属于自己的APP。
-总体样式如下：
-<img src="https://ganchengyuan1990.github.io/blog/img/weex.jpg" alt="">
-<!-- more -->
 
 开始动手！
 
 首先，引入了picker组件，这个组件用来进行时间选择，前端效果不错。
 <img src="https://ganchengyuan1990.github.io/blog/img/weex2.jpg" alt="" />
-
 
 
 春节在家无聊的时候，继续跟进了一下Weex的学习，主要把“关于我”这个Page进行了一些优化，这里主要是一些体力活，并没有太多可说的，简单总结以下几点：
